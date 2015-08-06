@@ -5,7 +5,7 @@
     @if(Session::has('message'))
       <p class="alert alert-danger">{!! Session::get('message') !!}</p>
     @endif
-    {!! Form::open( array('class' => 'form-signin', 'url' => 'do-login','method' => 'POST')) !!}
+    {!! Form::open( array('class' => 'form-signin', 'url' => 'doLogin','method' => 'POST')) !!}
       <h2 class="form-signin-heading">Please sign in</h2>
       <div class="form-group">
         <label for="email">Email address:</label>

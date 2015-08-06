@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::get('/login', function() {
    return view('auth.login');
 });
+
+Route::post('/doLogin', 'Auth\AuthController@doLogin');
